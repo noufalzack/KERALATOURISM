@@ -1,0 +1,182 @@
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.header nav a {
+  margin-left: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.wrapper {
+  margin: 250px;
+  width: 80%;
+}
+
+
+.text-box h2 {
+  font-size: 42px;
+}
+
+.text-box p {
+  font-size: 16px;
+}
+
+.DISTRICT {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.DISTRICT h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.district {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.district img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.district h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.district-grid .btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #8ab3df;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.district-grid .btn:hover {
+  background-color: rgb(20, 20, 197);
+}
+
+.course:hover {
+  transform: translateY(-10px);
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #333;
+  color: white;
+}
+
+.footer a {
+  color: #007BFF;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header nav {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .welcome-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .welcome-section .image img {
+    margin-top: 1rem;
+  }
+
+  .courses h2 {
+    font-size: 1.8rem;
+  }
+
+  .course h3 {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .welcome-section .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-section .content p {
+    font-size: 0.9rem;
+  }
+
+  .courses h2 {
+    font-size: 1.5rem;
+  }
+
+  .course h3 {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
